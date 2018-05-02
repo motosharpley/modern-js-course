@@ -71,3 +71,46 @@ myConstArray.push(10);
 console.log(myConstArray);
 
 
+
+/*
+*     Data Types
+*
+*/
+
+// Primitive Data Types
+
+// STRING can be wrapped in either double or single quotes
+const dblQuotes = "Joe Blow";
+const sngleQuotes = 'Joe Blow';
+
+// NUMBER do not use quotes and include whole integers and floats or decimal point numbers in Javascript
+const num = 123;
+
+// Boolean is a true or false contitional
+const isReady = true;
+
+// NULL intentional empty value
+const emptyVariable = null;
+
+// UNDEFINED variables are undefined by default
+let undefinedVariable;
+
+// SYMBOL
+const mySymbol = Symbol();
+
+// TYPEOF operator can be used to determine the data type of a variable
+console.log(typeof mySymbol);
+
+// Reference Data Types - Objects
+
+//ARRAYS are 0 indexed collections of data
+const myArray = [1,2,3];
+
+// OBJECT LITERAL stores key value pairs
+const myObject = {
+  myKey: "my string value",
+  numKey: 123,
+}
+
+// DATE
+const currentDate = new Date();
