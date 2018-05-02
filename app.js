@@ -45,3 +45,29 @@ var under_score = 'with_under_score_you_connect_like_this';
 var PascalCase = 'WithPascalEveryFirstLetterIsCapital';
 // Constants should be UPPER_CASE
 var CONSTANT_VAR = 'this naming convention helps identify constants in js';
+
+
+// LET
+let variableName; // Initialized undefined
+variableName = "new assigned value";
+// initialized and set value
+let myNewVar = "new variable with value assigned";
+
+// CONST must have a value assigned it cannot be initialized undefined like LET and VAR
+const name = 'const value cannot be reassigned';
+const num = 12345;
+
+
+// the data inside an object or array can change
+const myConstObject = {
+  name: 'this value can still change',
+  numProperty: 12345,
+}
+
+const myConstArray = [1, 4, 7,,9]
+// you can use methods to mutate the value
+myConstArray.push(10);
+
+console.log(myConstArray);
+
+
