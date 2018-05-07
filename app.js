@@ -55,7 +55,7 @@ let myNewVar = "new variable with value assigned";
 
 // CONST must have a value assigned it cannot be initialized undefined like LET and VAR
 const name = 'const value cannot be reassigned';
-const num = 12345;
+const numbers = 12345;
 
 
 // the data inside an object or array can change
@@ -114,3 +114,120 @@ const myObject = {
 
 // DATE
 const currentDate = new Date();
+
+
+
+/*
+*
+*     String Methods and Concatentation
+*
+*/
+
+const firstName = 'Joseph';
+const lastName = 'Blow';
+const age = 40;
+const str = 'Hello student you are awesome!';
+const tags = 'html, css, javascript, web development';
+
+let val;
+
+val = firstName + lastName;
+
+// Concatenation
+val = firstName + ' ' + lastName;
+
+// Append
+val = 'Bryan';
+val += 'Sharpley';
+
+// Concatenation
+val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+// Escaping characters 
+val = 'That\'s a great idea';
+
+// Length 
+val = firstName.length;
+
+
+// concat()
+val = firstName.concat(' ', lastName);
+
+// Change Case
+val = firstName.toUpperCase();
+val = lastName.toLowerCase();
+
+val = firstName[0];
+
+// indexOf()
+val = firstName.indexOf('o');
+val = firstName.indexOf('e');
+
+// charAt()
+val = firstName.charAt('0');
+
+// Get last character
+val = firstName.charAt(firstName.length -1);
+
+// substring()
+val = firstName.substring(0, 2);
+
+// slice()
+val = firstName.slice(0,2);
+val = firstName.slice(-3);
+
+// split()
+val = str.split(' ');
+val = tags.split(',');
+
+// replace()
+val = str.replace('student', 'StudentName');
+
+// includes()
+val = str.includes('Hello');
+
+
+// console.log(val);
+
+
+/*
+*   Template literals
+*
+*
+*/
+
+const studentName = 'George';
+const grade = 16;
+const job = 'Web Developer';
+const city = 'Las Vegas';
+let html;
+
+// With concatenation instead of template literals 
+html = ' <ul><li>Student Name: ' + studentName + ' </li><li>grade: ' + grade + ' </li><li>Job: ' + job + ' </li><li>City: ' + city + '</li></ul>';
+
+html =  ' <ul>' +
+          ' <li>Student Name: ' + studentName + '</li>' + 
+          ' <li>grade: '        + grade       + '</li>' +
+          ' <li>Job: '          + job         + '</li>' + 
+          ' <li>City: '         + city        + '</li>' +
+        ' </ul> ';
+
+//  document.body.innerHTML = html;
+
+function hello() {
+  return 'Hello'
+}
+
+//  With Template Literals
+html = `
+    <ul>
+      <li>              ${hello()}      </li>
+      <li>Student Name: ${studentName}</li>
+      <li>Grade:        ${grade}      </li>
+      <li>Job:          ${job}        </li>
+      <li>City          ${city}       </li>
+    </ul>
+  `;
+
+//  document.body.innerHTML = html;
+
