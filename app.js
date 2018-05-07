@@ -308,37 +308,64 @@
 // *
 // */
 
-const myObject = {
-  myKey: 'My value',
-  age: 33,
-  myArray: ['array string', 10, 44],
-  objInObject: {
-    key1: 'value one',
-    age: 'val 2'
-  },
-  getFunValue: function() {
-    return 2018 - this.age;
-  }
-}
+// const myObject = {
+//   myKey: 'My value',
+//   age: 33,
+//   myArray: ['array string', 10, 44],
+//   objInObject: {
+//     key1: 'value one',
+//     age: 'val 2'
+//   },
+//   getFunValue: function() {
+//     return 2018 - this.age;
+//   }
+// }
+
+// let val;
+
+// val = myObject;
+// val = myObject.myKey;
+// val = myObject['myKey'];
+// val = myObject.age;
+// val = myObject.myArray[1];
+// val = myObject.objInObject.age;
+// val = myObject.objInObject['key1'];
+// val = myObject.getFunValue();
+
+// console.log(val);
+
+// const people = [
+//   {name: 'joe', age: 22},
+//   {name: 'bob', age: 63}
+// ]
+
+// for(let i=0; i < people.length; i++) {
+//   console.log(people[i].name)
+// }
+
+
+/*
+*
+*   Dates and Time
+*
+*/
 
 let val;
 
-val = myObject;
-val = myObject.myKey;
-val = myObject['myKey'];
-val = myObject.age;
-val = myObject.myArray[1];
-val = myObject.objInObject.age;
-val = myObject.objInObject['key1'];
-val = myObject.getFunValue();
+let today = new Date();
+let birthday = new Date('1-13-1999 10:31:00');
+birthday = new Date('May 21 1969');
+birthday = new Date('4/15/1976');
+val = birthday;
+
+val = today.getMonth();
+val = today.getDate();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+val = today.getTime();
+
 
 console.log(val);
-
-const people = [
-  {name: 'joe', age: 22},
-  {name: 'bob', age: 63}
-]
-
-for(let i=0; i < people.length; i++) {
-  console.log(people[i].name)
-}
