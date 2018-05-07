@@ -231,3 +231,35 @@ html = `
 
 //  document.body.innerHTML = html;
 
+/*
+*
+* Arrays and Array Methods
+*
+*/
+
+const numberArray = [1,2,3,4,5,6];
+const newArray = new Array(2,4,6,8);
+const stringArray = ['some', 'text', 'even multiple words','and the last item needs no comma'];
+const mixedTypesArray = [33, 'strings', true, undefined, null, {a:3, b:6}, new Date()];
+
+// console.log(mixedTypesArray);
+
+let arrVal;
+
+arrVal = Array.isArray(numberArray);
+// Getting the length of an array tells you how many items it contains
+arrVal = numberArray.length;
+// You can access array items with thier index key
+arrVal = numberArray[0]; //arrays are zero indexed
+// insert into an array
+numberArray[0] = 33;
+// Find index of a value
+arrVal = numberArray.indexOf(123);//if the item your looking for doesn't exist you will get -1
+
+/*
+*   Mutating Arrays
+*
+*/
+
+console.log(numberArray);
+console.log(arrVal);
