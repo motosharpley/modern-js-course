@@ -261,5 +261,42 @@ arrVal = numberArray.indexOf(123);//if the item your looking for doesn't exist y
 *
 */
 
+// The push method adds to the end of an array
+numberArray.push(777);
+// The unshift method adds to the beginning of an array
+numberArray.unshift(111);
+
+// the pop method removes an item from the end
+numberArray.pop();
+// the shift method removes an item from the beginning
+numberArray.shift();
+// Splice takes a starting index and number of items to remove 
+numberArray.splice(2,3);
+// reverse and array
+numberArray.reverse();
+// concatenate an two arrays together 
+arrVal = numberArray.concat(newArray);
+
+// Sorting arrays
+arrVal = stringArray.sort();
+arrVal = numberArray.sort();
+
+// Using the compare function
+arrVal =numberArray.sort(function(a,b) {
+  return a - b;
+})
+// reverse sort
+arrVal =numberArray.sort(function(a,b) {
+  return b - a;
+})
+
+// Find method takes in a function
+function isUnder50(num) {
+  return num < 50;
+}
+
+arrVal =numberArray.find(isUnder50);
+
+
 console.log(numberArray);
 console.log(arrVal);
