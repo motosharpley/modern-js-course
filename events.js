@@ -130,3 +130,4 @@ delItem.addEventListener('click', deleteItem);
 //     e.target.parentElement.parentElement.remove();
 //   }
 // }
+
